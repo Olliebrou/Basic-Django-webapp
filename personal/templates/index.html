@@ -1,0 +1,167 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Oliver Brouckaert</title>
+    <meta name="description" content="About me">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Oliver Brouckaert</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#sites">Sites</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead" style="background: linear-gradient(rgb(80,152,222) 19%, var(--bs-success), white);">
+        <div class="container"><img class="rounded-circle img-fluid d-block mx-auto mb-5" src="{% static 'assets/img/CV_photo.jpg' %}" width="300px">
+            <h1 style="color: var(--bs-gray-800);font-weight: bold;font-style: italic;">Nice to meet you!</h1>
+            <hr class="star-light" style="background: var(--bs-indigo);filter: brightness(0%) contrast(0%) hue-rotate(0deg) saturate(0%) sepia(100%);">
+            <h2 class="font-weight-light mb-0" style="color: var(--bs-gray-700);">Software engineering student - Brewer - Systems integrator</h2>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary" style="margin: 49px;">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Basic interest calculator</h4>
+                    <hr class="star-dark mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="https://github.com/Olliebrou/HyperionDev-Capstone-projects/blob/d5ab1408a22e4d1108e4dcc726283b0dd8b22162/Capstone%201%20-%20Basic%20interest%20calculator/task1.py">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/calculator.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Basic user task manager</h4>
+                    <hr class="star-dark mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="https://github.com/Olliebrou/HyperionDev-Capstone-projects/tree/main/Capstone%202%20%26%203%20-%20Task%20Manager%20using%20files">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/task.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Shoe store inventory</h4>
+                    <hr class="star-dark mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="https://github.com/Olliebrou/HyperionDev-Capstone-projects/tree/main/Capstone%204%20-%20Shoe%20Inventory">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/shoe.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Bookstore inventory manager</h4>
+                    <hr class="star-dark mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="https://github.com/Olliebrou/HyperionDev-Capstone-projects/tree/main/Capstone%205%20-%20Bookstore%20Database">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/bookstore.jpg' %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "bg-secondary portfolio" id = "sites">
+        <div class="container">
+            <h2 class="text-uppercase text-center " style="margin: 49px;">Sites</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Blog</h4>
+                    <hr class="star-light mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="/blog">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/blog.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">CV</h4>
+                    <hr class="star-light mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="/cv">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/cvclip.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Online store</h4>
+                    <hr class="star-light mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="/onlinestore">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/store.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="text-center">Polls</h4>
+                    <hr class="star-light mb-5"><a class="stretched-link d-block mx-auto portfolio-item" href="/polls">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"></div>
+                        </div><img class="img-fluid" src="{% static 'assets/img/portfolio/poll.jpg' %}">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="text-white mb-0" id="about" style="background: #1a8755;">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About me</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead">This site is part of my HyperionDev assignment. It is the landing page of a site that contains information about me and the projects I have worked on.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <hr class="star-dark mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto col-md-3 mx-auto">
+                    <h4>Phone</h4>
+                    <p>0718958097</p>
+                </div>
+                <div class="col-auto m-auto">
+                    <h4>Email</h4>
+                    <p>oliver.brouckaert@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>7 Punters way<br>Kenilworth<br>Cape Town</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.facebook.com/olliebrou"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.instagram.com/olliebrouckaert"><i class="fa fa-instagram fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/Olliebrou"><i class="fa fa-github fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright ©&nbsp;Oliver Brouckaert 2023</small></div>
+    </div>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/freelancer.js' %}"></script>
+</body>
+
+</html>
