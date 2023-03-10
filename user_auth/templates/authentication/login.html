@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h1> Login as User </h1>
+
+        <form action="{% url 'user_auth:authenticate_user' %}" method="post">
+            {% csrf_token %}
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="User" required>
+            <br/><br/>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <br/><br/>
+
+            <input type="hidden" name="next" value="{{ request.GET.next }}" />
+            <input type="submit" value="Login" />
+
+        </form>
+        <br>
+        <br>
+        <br>
+        <h4>Not a user? Register <a href="{% url 'user_auth:register_user' %}?next={{ request.GET.next }}">here</a></h4>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'heading.html' %}
+{% block content %}
+<h3> {{ question.question_text }} </h1>
+
+<ul>
+    {% for choice in question.choice_set.all %}
+    <li>
+        {{ choice.choice_text }} -- {{ choice.votes}}
+        vote{{choice.votes|pluralize}}
+    </li>
+    {% endfor %}
+</ul>
+
+    <a class="link-dark" href="{% url 'polls:detail' question.id %}">
+    Vote again?
+    </a>
+    <br>
+    <br>
+    <a class = "link-dark" href = "{% url 'polls:index' %}"> Vote on another poll?</a>
+{% endblock %}

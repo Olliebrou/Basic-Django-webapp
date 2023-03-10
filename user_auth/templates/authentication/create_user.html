@@ -1,0 +1,6 @@
+<form action="{% url 'user_auth:register_user' %}" method='post'>
+    {% csrf_token %}
+    {{ form }}
+    <input type="hidden" name="next" value="{{ next }}" />
+    <input type="submit" value="Submit" />
+</form>
