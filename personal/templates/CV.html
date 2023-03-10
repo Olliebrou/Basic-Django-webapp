@@ -1,220 +1,163 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--bs-primary: #1c2b62;--bs-primary-rgb: 28,43,98;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>My CV</title>
-    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %} ">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Contact-Details.css">
-    <link rel="stylesheet" href="{% static 'assets/css/untitled.css' %}">
+    <title>This is title</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/line-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles-1.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
 </head>
 
 <body>
-    <header class="text-start text-white d-flex justify-content-center flex-wrap masthead" style="background: var(--bs-gray);">
-        <h1 class="text-center masthead-heading mb-0" style="font-size: 58px;width: 668px;">Hi! I'm Oliver Brouckaert</h1>
-        <div class="masthead-content">
-            <div class="container">
-                <h2 class="text-center masthead-subheading mb-0">This is my CV</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"><a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="d-block d-lg-none">Oliver Brouckaert</span><span class="d-none d-lg-block"><img class="border rounded-circle img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'assets/img/profile.jpg' %}" alt="..."></span></a><button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container container-fluid p-0">
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0"> Oliver&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="text-primary">Brouckaert</span></h1>
+                <h4 class="text-center text-black-50" style="margin-top: 30px;margin-bottom: 35px;font-family: 'Abril Fatface', serif;">brewer - systems integrator - aspiring developer</h4>
+                <p class="subheading mb-5"> 7 Punters way · Kenilworth, cape town 7708· 0718958097 · <a href="mailto:oliver.brouckaert@gmail.com">oliver.brouckaert@gmail.com</a></p>
+                <p class="lead mb-5">I am a young, driven and hardworking individual eager to start my career in software developing. I am a fast learner with a keen desire for gaining knowledge and experience. I am a hard worker who always gives my best to anything I do and will stop at nothing to achieve my goals.<br><br>I am currently a systems integrator so working with tech is something I do every day. Recently I came&nbsp; across software developing and fell in love with it. I believe that software development is what I was born to do. I intend to follow this passion.<br></p>
+                <div class="social-icons"><a class="social-icon" href="https://www.facebook.com/olliebrou"><i class="fa fa-facebook fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/Olliebrou"><i class="fa fa-star fab fa-github"></i></a><a class="social-icon" href="https://www.instagram.com/olliebrouckaert/"><i class="fa fa-instagram fab fa-twitter"></i></a><a class="social-icon" href="https://beersmithrecipes.com/viewuser/208796/ollieb"><i class="la la-beer fab fa-twitter"></i></a></div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex justify-content-center align-items-center align-content-center align-self-center"><img class="rounded-circle align-self-center" src="{% static 'assets/img/CV_photo.jpg' %}" style="width: 300px;"></div>
-                <div class="col-md-6" style="height: 300;">
-                    <section class="position-relative py-4 py-xl-5">
-                        <div class="container position-relative">
-                            <div class="row d-flex">
-                                <div class="col-md-6 col-lg-4 col-xl-4">
-                                    <div class="d-flex flex-column justify-content-center align-items-start h-100">
-                                        <div class="d-flex align-items-center p-3">
-                                            <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
-                                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h6 class="mb-0">Phone</h6>
-                                                <p class="mb-0">0718958097</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center p-3">
-                                            <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope">
-                                                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h6 class="mb-0">Email</h6>
-                                                <p class="mb-0">oliver.brouckaert@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center p-3"><a class="btn btn-primary active" role="button" style="background: rgba(255,255,255,0.5);" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook" style="width: 25px;height: 25px;">
-                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-                                                </svg></a></div>
-                                        <div class="d-flex align-items-center p-3"><a class="btn btn-primary active" role="button" style="background: rgba(255,255,255,0.5);" href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="width: 25px;height: 25px;">
-                                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <p><strong>Date of Birth:</strong>&nbsp;4 February 1998<br><strong>Age:</strong>&nbsp;24<br><strong>Citizenship:</strong>&nbsp;South African<br><strong>Languages:</strong>&nbsp;English and Afrikaans<br></p>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"></div>
-                </div>
-                <div class="col-lg-6 text-center order-lg-1">
-                    <div class="text-center d-flex justify-content-center align-items-center flex-wrap p-5">
-                        <h2 class="display-4">A bit about me...</h2>
-                        <p class="text-center">I am a young, driven and hardworking individual eager to start my career in software developing. I am a fast learner with a keen desire for gaining knowledge and experience. I am a hard worker who always gives my best to anything I do and will stop at nothing to achieve my goals.<br><br>I am currently a systems integrator so working with tech is something I do every day. Recently I came&nbsp; across software developing and fell in love with it. I believe that software development is what I was born to do. I intend to follow this passion.<br><br></p>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0"><strong>junior Systems Integrator/ Operations manager</strong><br></h3>
+                        <p class="subheading mb-3">SAintouch</p>
+                        <p>Worked on installation of video surveillance and networking systems for industrial clients in the Western Cape. Assisted with procurement of subcontractors and specialists. Assisted with customer relations and communication. Managed stock and equipment sourcing and purchasing.<br></p>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2022- Present</span></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section style="background: var(--bs-gray-600);">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5">
-                        <h2 class="display-4">Employment...</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">brewer</h3>
+                        <p class="subheading mb-3">afro-carribean brewery</p>
+                        <p>Assisted with and ran wort production on a 500L brewhouse. Created and improved several beer recipes. Assisted with maintenance and brewery upkeep. Collaborated brews with many other brewers and breweries. Brewed and packaged the batch of Jungle IPA that won gold at the Africa Beer Cup.<br></p>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">August 2021 - February 2022</span></div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row" style="border-width: 8px;border-bottom-style: none;">
-                <div class="col-md-4">
-                    <h5 class="text-start"><strong>Brewer at Nguni Brewery, Durban: March 2019 - February 2020:</strong><br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Assisted with and ran wort production. This was on a 1000L brewhouse where I would sometimes be responsible for everything from milling until packaging.</li>
-                        <li>Worked on Nguni-Brand beers as well as multiple contract brewing operations.</li>
-                        <li>Assisted with transport and logistics of beers and ingredients.</li>
-                        <li>Assisted with installations and upkeep of draught systems for customers.<br></li>
-                    </ul>
-                </div>
-                <div class="col-md-4" style="border-left-style: solid;">
-                    <h5><strong>Research Assistant at City Insight, Durban: February 2020 - September 2020</strong><br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Conducted research for company projects.</li>
-                        <li>Assisted with organizing and archiving important company records and documents.</li>
-                        <li>Assisted in daily operations.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4" style="border-left-style: solid;">
-                    <h5><strong>Online English Teacher at PalFish International: February 2021 — August 2021</strong><br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Conducted online English lessons to international second language English speaking learners.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row text-center justify-content-center" style="padding-bottom: 37px;padding-top: 52px;">
-                <div class="col-md-4">
-                    <h5 class="text-start"><strong>Brewer at Afro-Carribean Brewery, Cape Town: August 2021 - February 2022</strong><br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Assisted with and ran wort production on a 500L brewhouse.</li>
-                        <li>Created and improved several beer recipies.</li>
-                        <li>Assisted with maintenance and brewery upkeep</li>
-                        <li>Collaborated brews with many other brewers and breweries.<br></li>
-                        <li>Brewed and packaged the batch of Jungle IPA that won gold at the Africa Beer Cup.<br></li>
-                    </ul>
-                </div>
-                <div class="col-md-4" style="border-left-style: solid;">
-                    <h5><strong>Systems Integrator/ Operations manager for Western Cape at SAinTouch, Cape Town: February 2022 - Present</strong><br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Worked on installation of video surveillance and networking systems for industrial clients in the Western Cape</li>
-                        <li>Assisted with procurement of subcontractors and specialists</li>
-                        <li>Assisted with customer relations and communication.</li>
-                        <li>Managed stock and equipment sourcing and purchasing.<br></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="background: var(--bs-body-bg);">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5">
-                        <h2 class="display-4">Education...</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">online english teacher</h3>
+                        <p class="subheading mb-3">palfish international</p>
+                        <p>Conducted online English lessons to international second language English speaking learners<br></p>
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2021- August 2021</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between" style="margin-bottom: 47px;">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">research assistant</h3>
+                        <p class="subheading mb-3">city insight</p>
+                        <p>Conducted research for company projects. Assisted with organizing and archiving important company records and documents. Assisted in daily operations.<br></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2020- September 2020</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">brewer</h3>
+                        <p class="subheading mb-3">nguni brewery</p>
+                        <p>Assisted with and ran wort production. This was on a 1000L brewhouse where I would sometimes be responsible for everything from milling until packaging. Worked on Nguni-Brand beers as well as multiple contract brewing operations. Assisted with transport and logistics of beers and ingredients. Assisted with installations and upkeep of draught systems for customers.<br></p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">March 2019 - February 2020</span></div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="text-start"><strong>High School :&nbsp;</strong> Clifton College Durban 2006 - 2016<br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Matriculated with a Bachelors pass with distinctions in History and English.</li>
-                    </ul>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of cape town</h3>
+                        <p class="subheading mb-3">Bachelor of Science engineering</p>
+                        <p>Uncompleted - Mechatronics</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2017 - 2018</span></div>
                 </div>
-                <div class="col-md-4" style="border-left-style: solid;">
-                    <h5>BSc Eng Mechatronics University of Cape Town: 2017 - 2019<br></h5>
-                    <ul style="font-size: 12px;">
-                        <li>Completed first and second year.</li>
-                        <li>Did not complete third year due to unforeseen circumstances.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4" style="height: 191px;border-left-style: solid;">
-                    <h6>TESOL Certificate Course from International Open Academy: January 2021<br></h6>
-                    <ul style="font-size: 12px;"></ul>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">clifton college</h3>
+                    <p class="subheading mb-3">matric bachelors pass&nbsp;<br>Physics / biology / history</p>
+                    <p>Distinctions in History and English</p>
                 </div>
             </div>
-            <div class="row text-center justify-content-center" style="height: 193px;padding-top: 23px;">
-                <div class="col-md-4">
-                    <h6 class="text-start">General Certificate in Brewing from the Institute of Brewing and Distilling (IBD), Online: February 2021 - November 2021<br></h6>
-                    <ul style="font-size: 12px;"></ul>
-                </div>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <p class="subheading mb-3">Programming Languages &amp; Tools</p>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>DJANGO</li>
+                    <li>GIT</li>
+                    <li>Microsoft Office (Word, Excel, PowerPoint, Teams, Publisher)</li>
+                </ul>
+                <p class="subheading mb-3">brewing</p>
+                <ul>
+                    <li>Wort production</li>
+                    <li>Recipe creation and improvement&nbsp;</li>
+                    <li>Cleaning (CIP) and sterilizing&nbsp;</li>
+                    <li>Measuring and testing</li>
+                </ul>
+                <p class="subheading mb-3">other</p>
+                <ul>
+                    <li>Drivers license code 8</li>
+                    <li>Languages - English / Afrikaans</li>
+                    <li>Team leadership</li>
+                    <li>Public speaking</li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section style="background: var(--bs-gray-600);">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5" style="height: 73px;"></div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <h2 class="display-4" style="padding-bottom: 11px;padding-top: 25px;">Skills and competencies...&nbsp;</h2>
-                </div>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>Apart from working, I enjoy most of my time being outdoors. In the summer, I am an avid fisherman and not so great surfer. During the colder months here in Cape Town, I enjoy mountain biking, hiking, and photography. I enjoy brewing all year round and am a beer geek.</p>
+                <p class="mb-0">When I am at home, I love a good series or movie, I am a foodie and spend lots of time trying out new recipes and pairings. I am also a big sports fan and follow many different sports, however my true love is Formula 1.</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="row" style="height: 206.219px;">
-                <div class="col-md-6">
-                    <h1>Brewing:</h1>
-                    <ul>
-                        <li>Wort production<br></li>
-                        <li>Cleaning and sterilizing<br></li>
-                        <li>Recipe creation and modification<br></li>
-                        <li>Measuring and testing<br></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h1>IT and computers:</h1>
-                    <ul>
-                        <li>Proficient in Microsoft Excel, Word, PowerPoint, Teams<br></li>
-                        <li>Basic coding in Python, SQL, HTML<br></li>
-                    </ul>
-                </div>
+        </section>
+        <hr class="m-0">
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards &amp; Certifications</h2>
+                <ul>
+                    <li>General Certificate in Brewing - Institute of Brewing and Distilling - 2021</li>
+                    <li>Teaching english as a second language (TESOL) certificate - 2021</li>
+                </ul>
+                <ul class="fa-ul mb-0">
+                    <li> Gold medal beer winner at Africa beer cup 2022 for Jungle IPA<span class="fa-li"><i class="fa fa-star fas fa-trophy text-warning"></i></span></li>
+                    <li> Deputy mayor of Durban Youth Council<span class="fa-li"><i class="fa fa-star fas fa-trophy text-warning"></i></span></li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <footer class="py-5 bg-black">
-        <div class="container" style="width: 330px;height: 330px;"><img class="rounded-circle" src="{% static 'assets/img/photo.jpg' %}" style="width: 330px;height: 330px;"></div>
-        <p class="lead" style="text-align: center;color: var(--bs-gray-100);margin: 63px;">THANKS FOR READING!</p>
-    </footer>
+        </section>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/scripts.js' %}"></script>
 </body>
 
 </html>
